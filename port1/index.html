@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sokhibjon Portfolio</title>
+    <link rel="stylesheet" href="app/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="app/css/style.css" />
+  </head>
+  <body>
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" id="contact-modal">
+        <div class="modal-content p-3">
+          <div class="float-right">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <h3 class="form-title text-center">CONTACT ME</h3>
+          <form>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="service-type"
+                id="inlineRadio1"
+                value="Say-Hi"
+              />
+              <label class="form-check-label" for="inlineRadio1">Say-Hi</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="service-type"
+                id="inlineRadio2"
+                value="Get-quote"
+              />
+              <label class="form-check-label" for="inlineRadio2"
+                >Get-quote</label
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input
+                class="form-control"
+                type="text"
+                name="name"
+                placeholder="Adam.."
+                id="name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Your email</label>
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                placeholder="@Adam.com"
+                id="email"
+              />
+            </div>
+            <div class="form-group">
+              <select class="custom-select" id="services" required>
+                <option selected value="">Needed services</option>
+                <option>eCommerce Businesses</option>
+                <option>UI/UX Design</option>
+                <option>Other Services</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select class="custom-select" id="budget" required>
+                <option selected value="">Budget</option>
+                <option>1500 &dollar;</option>
+                <option>2000 &dollar;</option>
+                <option>3000 &dollar;</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                name="message"
+                id="message"
+                cols="30"
+                rows="5"
+              >
+Your message</textarea
+              >
+            </div>
+            <button class="btn" type="submit">Submit</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <nav class="navigation">
+      <div class="container-fluid p-5">
+        <div class="flex jc-sb ai-c">
+          <a href="index.html" class="navbar-brand">
+            <img
+              src="app/resources/images/icons/icons8-s-symbol-50.png"
+              alt=""
+            />
+          </a>
+          <ul class="nav ml-auto align-items-center menu">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Github</a>
+            </li>
+            <li class="nav-item">
+              <a
+                type="button"
+                data-toggle="modal"
+                data-target="#staticBackdrop"
+                class="nav-link contactBtn"
+                href="#"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+
+          <a href="#" class="ml-auto toggleBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="mt-5 mx-auto mobile-menu hide">
+          <ul
+            class="nav d-flex flex-column justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#">Github</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link contactBtn" href="#">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="header text-center">
+      <div class="overlay">
+        <div class="container-fluid">
+          <h1>Designer, Front-end Developer & Mentor</h1>
+          <h2>
+            I design and code beautifully simple things, and I love what I do.
+          </h2>
+          <img
+            src="app/resources/images/mf-avatar.svg"
+            alt="svg-portrait"
+            class="hero-img"
+          />
+          <div class="to-bottom-wrapper">
+            <img
+              src="app/resources/images/Code_collaboration.svg"
+              class="img-fluid to-bottom"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="qualifications">
+      <div class="about">
+        <div class="py-5">
+          <div
+            class="about-title-wrapper mt-5 mx-auto text-center text-white mb-5"
+          >
+            <h1 class="about-title">Hi, I’m Sokhibjon. Nice to meet you.</h1>
+            <p class="about-desc">
+              Since beginning my journey as a freelance designer nearly 10 years
+              ago, I've done remote work for agencies, consulted for startups,
+              and collaborated with talented people to create digital products
+              for both business and consumer use. I'm quietly confident,
+              naturally curious, and perpetually working on improving my chops
+              one design problem at a time.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid py-5">
+        <div class="qualifications-wrapper">
+          <div class="row text-center">
+            <div class="col-12 col-sm-6 p-3">
+              <div class="text-center">
+                <img
+                  src="app/resources/images/icons/icons8-keyboard-40.png"
+                  alt="some icon"
+                />
+                <h4>Designer</h4>
+                <p>
+                  I value simple content structure, clean design patterns, and
+                  thoughtful interactions.
+                </p>
+                <h5>Things i do:</h5>
+                <p>UX, UI, Web, Mobile, Apps, Logos</p>
+                <h5>Design Tools:</h5>
+                <div class="tools">
+                  <div>Balsamiq</div>
+                  <div>Mockups</div>
+                  <div>Figma</div>
+                  <div>Invision</div>
+                  <div>Marvel</div>
+                  <div>Pen & Paper</div>
+                  <div>Sketch</div>
+                  <div>Webflow Zeplin</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 p-3">
+              <div>
+                <img
+                  src="app/resources/images/icons/icons8-web-design-40.png"
+                  alt="some icon"
+                />
+                <h4>Front-end Developer</h4>
+                <p>
+                  I like to code things from scratch, and enjoy bringing ideas
+                  to life in the browser.
+                </p>
+                <h5>Languages I speak:</h5>
+                <p>HTML, CSS, Sass, JavaScript, React, NativeScript, Node Js</p>
+                <h5>Dev Tools:</h5>
+                <div class="tools">
+                  <div>Bitbucket</div>
+                  <div>Bootstrap</div>
+                  <div>Bulma</div>
+                  <div>Codepen</div>
+                  <div>Github</div>
+                  <div>Gitlab</div>
+                  <div>Terminal</div>
+                  <div>VS Code</div>
+                  <div>Atom</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="recent-work">
+          <div class="recent-work-title-wrapper text-center">
+            <h2>My Recent Work</h2>
+            <p>
+              Here are a few design projects I've worked on recently. Want to
+              see more? Email me.
+            </p>
+          </div>
+          <div class="recent-w-wrapper">
+            <div class="recent-w">
+              <img
+                src="app/resources/images/freeimg_12673169048freejpg850.jpg"
+                alt="recent-w"
+              />
+              <div class="recent-overlay">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="nav-link">Learn more</a>
+              </div>
+            </div>
+            <div class="recent-w">
+              <img
+                src="app/resources/images/freeimg_47841037freejpg850.jpg"
+                alt="recent-w"
+              />
+              <div class="recent-overlay">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="nav-link">Learn more</a>
+              </div>
+            </div>
+            <div class="recent-w">
+              <img
+                src="app/resources/images/freeimg_58746987freejpg850.jpg"
+                alt="recent-w"
+              />
+              <div class="recent-overlay">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="nav-link">Learn more</a>
+              </div>
+            </div>
+            <div class="recent-w">
+              <img
+                src="app/resources/images/freeimg_71978372freejpg850.jpg"
+                alt="recent-w"
+              />
+              <div class="recent-overlay">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="nav-link">Learn more</a>
+              </div>
+            </div>
+            <div class="recent-w">
+              <img
+                src="app/resources/images/freeimg_92769330046freejpg850.jpg"
+                alt="recent-w"
+              />
+              <div class="recent-overlay">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="nav-link">Learn more</a>
+              </div>
+            </div>
+            <div class="recent-w">
+              <img
+                src="app/resources/images/freeimg_97433508047freejpg850.jpg"
+                alt="recent-w"
+              />
+              <div class="recent-overlay">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="nav-link">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="text-center my-3">
+              <a class="brand" href="index.html">
+                <img
+                  src="app/resources/images/icons/icons8-s-symbol-50_white.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <h3 class="text-center text-white">
+              Living, learning, & leveling up one day at a time.
+            </h3>
+            <div class="social">
+              <a href="#">
+                <?xml version="1.0"?><svg
+                  fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="48px"
+                  height="48px"
+                >
+                  <path
+                    d="M12,0C5.373,0,0,5.373,0,12c0,6.016,4.432,10.984,10.206,11.852V15.18H7.237v-3.154h2.969V9.927c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L16.73,15.18h-3.106v8.697 C19.481,23.083,24,18.075,24,12C24,5.373,18.627,0,12,0z"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <?xml version="1.0"?><svg
+                  fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 50 50"
+                  width="48px"
+                  height="48px"
+                >
+                  <path
+                    d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 30 30"
+                  width="48px"
+                  height="48px"
+                >
+                  <path
+                    d="M 17.662109 2 C 15.565005 2 14 3.7131367 14 5.6621094 L 14 9.0351562 C 11.24971 9.1810926 8.7344872 9.9143634 6.7265625 11.064453 C 5.9527826 10.321405 4.9166871 9.991448 3.9121094 9.9921875 C 2.8229214 9.9929893 1.7094525 10.370413 0.94140625 11.234375 L 0.92382812 11.253906 L 0.90625 11.273438 C 0.16947928 12.194228 -0.12225605 13.427747 0.07421875 14.652344 C 0.25365009 15.770711 0.90137168 16.893419 2.0273438 17.628906 C 2.0199689 17.753058 2 17.874618 2 18 C 2 22.962 7.832 27 15 27 C 22.168 27 28 22.962 28 18 C 28 17.874618 27.980031 17.753058 27.972656 17.628906 C 29.098628 16.893419 29.74635 15.770711 29.925781 14.652344 C 30.122256 13.427747 29.830521 12.194228 29.09375 11.273438 L 29.076172 11.253906 L 29.058594 11.234375 C 28.290448 10.370294 27.177168 9.9929893 26.087891 9.9921875 C 25.08323 9.991448 24.046988 10.321133 23.273438 11.064453 C 21.265513 9.9143634 18.75029 9.1810926 16 9.0351562 L 16 5.6621094 C 16 4.6830821 16.565214 4 17.662109 4 C 18.182797 4 18.817104 4.2609042 19.810547 4.609375 C 20.650361 4.9039572 21.743308 5.2016984 23.140625 5.2910156 C 23.474875 6.2790874 24.402814 7 25.5 7 C 26.875 7 28 5.875 28 4.5 C 28 3.125 26.875 2 25.5 2 C 24.561213 2 23.747538 2.5304211 23.320312 3.3007812 C 22.125831 3.2346294 21.248238 2.9947078 20.472656 2.7226562 C 19.568849 2.4056271 18.738422 2 17.662109 2 z M 3.9121094 11.992188 C 4.3072494 11.991896 4.6826692 12.095595 4.9921875 12.263672 C 3.8881963 13.18517 3.0505713 14.261821 2.5449219 15.4375 C 2.2764358 15.106087 2.114647 14.734002 2.0507812 14.335938 C 1.9430146 13.664243 2.1440212 12.966045 2.4628906 12.552734 C 2.7642172 12.228395 3.3144613 11.992626 3.9121094 11.992188 z M 26.085938 11.992188 C 26.683756 11.992627 27.235874 12.22849 27.537109 12.552734 C 27.855979 12.966045 28.056985 13.664243 27.949219 14.335938 C 27.885353 14.734002 27.723564 15.106087 27.455078 15.4375 C 26.949429 14.261821 26.111804 13.18517 25.007812 12.263672 C 25.316626 12.095792 25.690955 11.991896 26.085938 11.992188 z M 10 14 C 11.105 14 12 14.895 12 16 C 12 17.105 11.105 18 10 18 C 8.895 18 8 17.105 8 16 C 8 14.895 8.895 14 10 14 z M 20 14 C 21.105 14 22 14.895 22 16 C 22 17.105 21.105 18 20 18 C 18.895 18 18 17.105 18 16 C 18 14.895 18.895 14 20 14 z M 20.238281 19.533203 C 19.599281 21.400203 17.556 23 15 23 C 12.444 23 10.400719 21.400969 9.7617188 19.667969 C 10.911719 20.600969 12.828 21.267578 15 21.267578 C 17.172 21.267578 19.088281 20.600203 20.238281 19.533203 z"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 26 26"
+                  width="48px"
+                  height="48px"
+                >
+                  <path
+                    d="M 13 0.1875 C 5.925781 0.1875 0.1875 5.925781 0.1875 13 C 0.1875 20.074219 5.925781 25.8125 13 25.8125 C 20.074219 25.8125 25.8125 20.074219 25.8125 13 C 25.8125 5.925781 20.074219 0.1875 13 0.1875 Z M 13 2.1875 C 18.960938 2.1875 23.8125 7.039063 23.8125 13 C 23.8125 13.46875 23.777344 13.921875 23.71875 14.375 C 23.519531 14.324219 22.894531 14.164063 22.21875 14.15625 C 21.613281 14.148438 20.886719 14.25 20.5 14.3125 C 20.601563 13.898438 20.6875 13.457031 20.6875 13 C 20.6875 11.859375 20.257813 10.75 19.5 9.8125 C 19.78125 8.929688 20.171875 6.921875 19.40625 6.15625 C 17.53125 6.15625 16.476563 7.347656 16.28125 7.59375 C 15.421875 7.28125 14.492188 7.125 13.5 7.125 C 12.53125 7.125 11.59375 7.265625 10.75 7.5625 C 10.488281 7.246094 9.453125 6.15625 7.65625 6.15625 C 6.90625 6.90625 7.28125 8.839844 7.5625 9.75 C 6.769531 10.703125 6.3125 11.832031 6.3125 13 C 6.3125 13.429688 6.347656 13.859375 6.4375 14.25 C 6.109375 14.222656 4.777344 14.125 4.25 14.125 C 3.722656 14.125 2.855469 14.238281 2.28125 14.375 C 2.222656 13.921875 2.1875 13.46875 2.1875 13 C 2.1875 7.039063 7.039063 2.1875 13 2.1875 Z M 4.25 14.375 C 4.769531 14.375 6.371094 14.519531 6.53125 14.53125 C 6.558594 14.625 6.589844 14.71875 6.625 14.8125 C 6.097656 14.769531 4.96875 14.695313 4.25 14.78125 C 3.371094 14.886719 2.722656 15.234375 2.46875 15.375 C 2.414063 15.128906 2.351563 14.875 2.3125 14.625 C 2.863281 14.496094 3.761719 14.375 4.25 14.375 Z M 22.21875 14.40625 C 22.875 14.414063 23.519531 14.554688 23.6875 14.59375 C 23.671875 14.707031 23.644531 14.824219 23.625 14.9375 C 23.539063 14.914063 22.757813 14.675781 21.9375 14.65625 C 21.535156 14.644531 20.898438 14.710938 20.40625 14.75 C 20.429688 14.6875 20.449219 14.625 20.46875 14.5625 C 20.808594 14.515625 21.617188 14.398438 22.21875 14.40625 Z M 21.90625 14.90625 C 22.703125 14.925781 23.546875 15.175781 23.59375 15.1875 C 22.855469 18.777344 20.335938 21.699219 17 23.03125 L 17 21.3125 C 17 20.230469 16.355469 18.824219 15.4375 18.125 C 18.023438 17.753906 19.632813 16.609375 20.3125 15 C 20.777344 14.960938 21.488281 14.894531 21.90625 14.90625 Z M 5.0625 15 C 5.777344 15.003906 6.417969 15.039063 6.71875 15.0625 C 7.414063 16.636719 9.011719 17.757813 11.5625 18.125 C 11.273438 18.347656 11.003906 18.636719 10.78125 18.96875 C 10.773438 18.980469 10.757813 18.988281 10.75 19 C 10.25 19.601563 9.3125 19.5625 8.4375 19.5625 C 7.542969 19.5625 7.007813 18.847656 6.53125 18.21875 C 6.050781 17.59375 5.425781 17.539063 5.09375 17.5 C 4.761719 17.464844 4.671875 17.632813 4.84375 17.75 C 5.816406 18.433594 6.199219 19.269531 6.59375 20 C 6.949219 20.65625 7.679688 21 8.5 21 L 10.03125 21 C 10.019531 21.101563 10 21.214844 10 21.3125 L 10 23.375 C 6.316406 22.3125 3.464844 19.359375 2.53125 15.625 C 2.726563 15.515625 3.414063 15.132813 4.28125 15.03125 C 4.488281 15.007813 4.765625 15 5.0625 15 Z M 13.5 21 C 13.777344 21 14 21.222656 14 21.5 L 14 23.75 C 13.667969 23.78125 13.339844 23.8125 13 23.8125 L 13 21.5 C 13 21.222656 13.222656 21 13.5 21 Z M 11.5 21.59375 C 11.777344 21.59375 12 21.816406 12 22.09375 L 12 23.75 C 11.667969 23.71875 11.324219 23.683594 11 23.625 L 11 22.09375 C 11 21.816406 11.222656 21.59375 11.5 21.59375 Z M 15.5 21.59375 C 15.777344 21.59375 16 21.816406 16 22.09375 L 16 23.375 C 15.671875 23.46875 15.339844 23.5625 15 23.625 L 15 22.09375 C 15 21.816406 15.222656 21.59375 15.5 21.59375 Z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <p class="text-white my-3">
+              Handcrafted by me &copy; twentytwentyone
+            </p>
+            <p class="my-3">
+              <small class="text-white">made with</small>
+              <span>
+                <a href="#" class="getBs4Btn">
+                  <img
+                    src="app/resources/images/icons/icons8-bootstrap-40.png"
+                    alt=""
+                  />
+                </a>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app/vendor/jquery.min.js"></script>
+    <script src="app/vendor/popper.min.js"></script>
+    <script src="app/vendor/bootstrap.min.js"></script>
+    <script src="app/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+.header {
+  margin: 4rem 0 0 0;
+  position: relative;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 2.265rem;
+    }
+  }
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 1.25rem;
+  }
+  .hero-img {
+    width: 11.375rem;
+    margin-bottom: 1.875rem;
+  }
+
+  .to-bottom-wrapper {
+    margin-bottom: -58px;
+    @media screen and (max-width: 768px) {
+      margin-bottom: -40px;
+    }
+
+    @media screen and (max-width: 375px) {
+      margin-bottom: -20px;
+    }
+
+    @media screen and (max-width: 360px) {
+      margin-bottom: -35px;
+    }
+
+    @media screen and (max-width: 320px) {
+      margin-bottom: -30px;
+    }
+  }
+  .to-bottom {
+    width: 34.375rem;
+  }
+}

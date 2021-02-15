@@ -1,0 +1,50 @@
+.footer {
+  padding: 30px;
+  background-color: $purple;
+
+  .brand {
+    text-decoration: none;
+  }
+  h3 {
+    margin: 30px;
+  }
+  .social {
+    margin-bottom: 30px;
+
+    > a {
+      width: 45px;
+      height: 45px;
+      background-color: $purple;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 20px 10px;
+      position: relative;
+      border: 1px solid $white;
+      transition: all ease-in-out 300ms;
+      &:hover {
+        background-color: $white;
+        border-color: lightgrey;
+      }
+
+      &:hover svg {
+        fill: $purple;
+      }
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 25px;
+        transition: all ease-in-out 300ms;
+        &:hover {
+          fill: $purple;
+        }
+      }
+    }
+    .getBs4Btn {
+      text-decoration: none;
+    }
+  }
+}
